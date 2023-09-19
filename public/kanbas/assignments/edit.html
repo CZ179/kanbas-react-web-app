@@ -1,4 +1,4 @@
-<table border="1" width="100%">
+<table border="0" width="100%">
     <tbody>
       <tr>
 
@@ -6,13 +6,13 @@
         <td valign="top">
           <ul>
             <li>
-              <a href="/Kanbas/Account/Profile/screen.html">Account</a>
+              <a href="/kanbas/profile/index.html">Account</a>
             </li>
             <li>
-              <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+              <a href="/kanbas/home.html">Dashboard</a>
             </li>
             <li>
-              <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+              <a href="/kanbas/home.html">Courses</a>
             </li>
             <li>
                 <a href="#">Calendar</a>
@@ -39,7 +39,7 @@
         <td valign="top">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/kanbas/home.html">Home</a>
             </li>
             <li>
               <a href="#">Modules</a>
@@ -51,13 +51,13 @@
               <a href="#">Zoom Meetings</a>
             </li>
             <li>
-              <a href="#">Assignments</a>
+              <a href="/kanbas/assignments/index.html">Assignments</a>
             </li>
             <li>
                 <a href="#">Quizzes</a>
             </li>
             <li>
-              <a href="#">Grades</a>
+              <a href="/kanbas/grades.html">Grades</a>
             </li>
             <li>
                 <a href="#">People</a>
@@ -90,7 +90,7 @@
                 <a href="#">Syllabus</a>
             </li>
             <li>
-                <a href="/kanbas/settings/course-detail/index.html">Settings</a>
+              <a href="/kanbas/settings/course-detail/index.html">Settings</a>
             </li>
           </ul>
         </td>
@@ -108,12 +108,12 @@
 
         <h1></h1>
 
-        <input type="text" placeholder="This is the asignment description." title="Assignment Description"><br/>
+        <textarea cols="40" rows="10">This is the assignment description</textarea>
 
         <h1></h1>
 
         <label for="points">Points</label><br/>
-        <input type="number" id="points" placeholder="100" value="10000">
+        <input type="number" id="points" placeholder="100" value="100">
 
         <h1></h1>
 
@@ -175,7 +175,7 @@
 
         <h1></h1>
 
-        <label for="peer-review">Group Assignment</label><br/>
+        <label for="peer-review">Peer Review</label><br/>
         <input type="checkbox" value="peer-review-checkbox-no" name="peer-review-check" id="peer-review-no">
         <label for="peer-review">Require Peer Reviews</label>
         
@@ -183,9 +183,7 @@
 
         <label for="assign">Assign</label><br/>
         Assign to<br/>
-        <select>
-            <option value="everyone">Everyone</option>
-        </select>
+        <input type="text" placeholder="Everyone" value="Everyone">
 
         <h1></h1>
 
@@ -194,12 +192,12 @@
 
         <h1></h1>
 
-        <label for="available-from">Due</label><br/>
+        <label for="available-from">Available from</label><br/>
         <input type="date" id="available-from" value="2021-01-01">
 
         <h1></h1>
 
-        <label for="until">Due</label><br/>
+        <label for="until">Until</label><br/>
         <input type="date" id="until" value="2021-01-01">
         
         <h1></h1>
